@@ -5,6 +5,5 @@
     platform: time
   condition: []
   action:
-  - service: switch.turn_off
-  - data:
-    entity_id: switch.fjernkontroll_2_2
+   data: {entity_id: switch.fjernkontroll_2_2}
+    service: switch.turn_off
