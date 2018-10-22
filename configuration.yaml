@@ -1,5 +1,5 @@
 homeassistant:
-  # Name of the location where Home Assistant is running1
+  # Name of the location where Home Assistant is running2
   name: Home
   # Location required to calculate the time the sun rises and sets
   latitude: 0
