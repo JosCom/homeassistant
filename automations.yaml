@@ -1,0 +1,11 @@
+- id: '1540053020497'
+  alias: Restart Trådløs
+  trigger:
+  - at: 03:00
+    platform: time
+  condition: []
+  action:
+  - data: {}
+    service: switch.turn_off
+  - entities:
+    - switch.fjernkontroll_2_2
