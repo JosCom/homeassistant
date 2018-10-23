@@ -1,0 +1,15 @@
+light_color:
+  name: Lysfarge
+  initial: 352
+  min: 252
+  max: 454
+  step: 102
+  mode: slider
+
+light_brightness:
+  name: Lysstyrke
+  initial: 80
+  min: 0
+  max: 100
+  step: 20
+  mode: slider
