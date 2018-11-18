@@ -13,10 +13,4 @@ home_status:
     - Borte
   initial: Normal
 
-home_status2:
-  name: Hjemmestatus2
-  options:
-    - Fullt Hus
-    - Normal
-    - Borte
-  initial: Normal
+

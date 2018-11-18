@@ -63,6 +63,12 @@ tts:
 
 # Cloud
 cloud:
+  google_actions:
+    filter:
+      include_entities:
+        - light.taklampe_gang
+        - light.taklampe_soverom
+        - sensor.ute_inngang_temperature
 
 tellduslive:
   host: 192.168.1.11
