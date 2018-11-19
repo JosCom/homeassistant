@@ -1,5 +1,4 @@
-test:
-  name: Romantic
+- name: Romantic
   entities:
     - light.kontor_tak:
       state: true
