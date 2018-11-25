@@ -1,0 +1,3 @@
+scene_test:  
+  service: scene.turn_on
+  entity_id: scene.romantic
