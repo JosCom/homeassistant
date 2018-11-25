@@ -17,3 +17,6 @@ google_actions:
     scene.romantic:
       name: Dagmodus
       room: Panel
+    media_player.living_room:
+      name: Temperatur inngang
+      room: Ute
