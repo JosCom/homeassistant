@@ -75,6 +75,9 @@ cloud:
       media_player.kitchen:
         name: Sonos kjøkken
         room: Kjøkken
+      scene.romantic:
+        name: Dagmodus
+        room: Panel
 
 
 tellduslive:
