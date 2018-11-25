@@ -76,3 +76,4 @@ input_select: !include input_select.yaml
 input_number: !include input_number.yaml
 scene: !include scenes.yaml
 light: !include lights.yaml
+switch: !include switches.yaml
