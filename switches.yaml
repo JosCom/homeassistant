@@ -4,7 +4,7 @@
     - light.gang
     - light.stue
     - light.kjkken
-  name: Fluxer
+
   start_time: '7:00'
   stop_time: '23:00'
   start_colortemp: 4000
