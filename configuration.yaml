@@ -62,22 +62,8 @@ tts:
   - platform: google
 
 # Cloud
-cloud:
-  google_actions:
-    filter:
-      include_entities:
-        - light.taklampe_gang
-        - light.taklampe_soverom
-        - sensor.ute_inngang_temperature
-        - scene.romantic
-        - media_player.kitchen
-    entity_config:
-      media_player.kitchen:
-        name: Sonos kjøkken
-        room: Kjøkken
-      scene.romantic:
-        name: Dagmodus
-        room: Panel
+cloud: !include cloud.yaml
+
 
 
 tellduslive:
