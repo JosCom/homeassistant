@@ -70,7 +70,11 @@ cloud:
         - light.taklampe_soverom
         - sensor.ute_inngang_temperature
         - scene.romantic
-
+        - media_player.kitchen
+    entity_config:
+      media_player.kitchen:
+        name: Sonos kjøkken
+        room: Kjøkken
 
 
 tellduslive:
