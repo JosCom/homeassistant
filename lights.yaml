@@ -4,3 +4,22 @@
     - light.taklampe_grovkjkken
     - light.kjkkenbord
 
+- platform: group
+  name: Stue
+  entities:
+    - light.stue_bokhylle
+    - light.stue_sofa
+    - light.stue_stalampe
+
+- platform: group
+  name: Gang
+  entities:
+    - light.entre
+    - light.taklampe_gang
+
+- platform: group
+  name: Lekestue
+  entities:
+    - light.tvstuea
+    - light.tvstuek
+    - light.tvsuem
