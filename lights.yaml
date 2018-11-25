@@ -1,0 +1,6 @@
+- platform: group
+  name: Kjøkken
+  entities:
+    - light.taklampe_grovkjkken
+    - light.kjkkenbord
+
