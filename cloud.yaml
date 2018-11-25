@@ -7,6 +7,7 @@ google_actions:
       - scene.romantic
       - media_player.kitchen
       - media_player.living_room
+      - scene_test
   entity_config:
     media_player.kitchen:
       name: Sonos kjøkken
@@ -20,3 +21,6 @@ google_actions:
     sensor.ute_inngang_temperature:
       name: Temperatur inngang
       room: Ute
+    scene_test:
+      name: scenetest
+      room: Panel
