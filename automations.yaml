@@ -1,7 +1,7 @@
-- homeassistant_start:
+homeassistant_start:
   trigger:
     platform: homeassistant
-    Event: start
+    event: start
   action:
     - service: switch.turn_on
       data:
