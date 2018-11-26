@@ -64,7 +64,8 @@ tts:
 # Cloud
 cloud: !include cloud.yaml
 
-
+mqtt:
+  broker: 192.168.1.10
 
 tellduslive:
   host: 192.168.1.11
