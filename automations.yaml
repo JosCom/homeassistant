@@ -5,6 +5,6 @@ homeassistant_start:
   action:
     - service: switch.turn_on
       data:
-        entities:
-        - switch.automatisk_lys
+        entity_id: switch.automatisk_lys
+
       
