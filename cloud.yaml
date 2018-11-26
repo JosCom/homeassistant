@@ -8,6 +8,7 @@ google_actions:
       - media_player.kitchen
       - media_player.living_room
       - script.scene_test
+      - switch.automatisk_lys
   entity_config:
     media_player.kitchen:
       name: Sonos kjøkken
@@ -24,3 +25,6 @@ google_actions:
     script.scene_test:
       name: scenetest
       room: Panel
+    switch.automatisk_lys:
+      name: Automatisk lys
+      room: Panel 
