@@ -1,10 +1,11 @@
 - homeassistant_start:
-  trigger:
-    platform: homeassistant
-    event: start
-  action:
-    - service: switch.turn_on
-      data:
-        entity_id: switch.automatisk_lys
+
+    trigger:
+      platform: homeassistant
+      event: start
+    action:
+      - service: switch.turn_on
+        data:
+          entity_id: switch.automatisk_lys
 
       
