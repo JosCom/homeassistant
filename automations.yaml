@@ -1,4 +1,4 @@
-homeassistant_start:
+- homeassistant_start:
   trigger:
     platform: homeassistant
     event: start
