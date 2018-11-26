@@ -13,4 +13,12 @@ home_status:
     - Borte
   initial: Normal
 
+timeofday:
+  name: Tid på dagen
+  options:
+    - Dag
+    - Ettermiddag
+    - Kveld
+    - Natt
+  initial: Natt
 
