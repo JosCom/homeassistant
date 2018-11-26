@@ -40,7 +40,7 @@
   payload_off: "OFF"
   optimistic: false
   
-  - platform: mqtt
+- platform: mqtt
   name: "Instillinger ettermiddagslys"
   state_topic: "afternoonlight/rgb1/light/status"
   command_topic: "afternoonlight/rgb1/light/switch"
@@ -56,7 +56,7 @@
   payload_off: "OFF"
   optimistic: false
   
-  - platform: mqtt
+- platform: mqtt
   name: "Instillinger kveldslys"
   state_topic: "eveninglight/rgb1/light/status"
   command_topic: "eveninglight/rgb1/light/switch"
@@ -72,7 +72,7 @@
   payload_off: "OFF"
   optimistic: false
   
-  - platform: mqtt
+- platform: mqtt
   name: "Instillinger nattlys"
   state_topic: "nightlight/rgb1/light/status"
   command_topic: "nightlight/rgb1/light/switch"
