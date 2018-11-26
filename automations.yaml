@@ -1,1 +1,10 @@
-[]
+homeassistant_start:
+  trigger:
+    platform: homeassistant
+    Event: start
+  action:
+    - service: switch.turn_on
+      data:
+        entities:
+        - switch.automatisk_lys
+      
