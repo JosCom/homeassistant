@@ -1,4 +1,4 @@
-- homeassistant_start:
+- alias: homeassistant_start
 
     trigger:
       platform: homeassistant
