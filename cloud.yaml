@@ -3,7 +3,13 @@ google_actions:
     include_entities:
       - light.taklampe_gang
       - light.taklampe_soverom
-      - sensor.ute_inngang_temperature
+      - light.gang
+      - light.stue
+      - light.lekestue
+      - light.kjkken
+      - light.nattbordslampe_kristian
+      - light.nattbordslampe_andreas
+      - light.taklampe_soverom
       - scene.romantic
       - media_player.kitchen
       - media_player.living_room

@@ -24,7 +24,7 @@
     - light.lampe_seksjon
     
 - platform: group
-  name: Taklampe Lekestue
+  name: Taklampe lekestue
   entities:
     - light.tvstuea
     - light.tvstuek
