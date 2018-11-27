@@ -2,19 +2,19 @@
   name: Kjøkken
   entities:
     - light.taklampe_grovkjkken
-    - light.kjkkenbord
+    - light.lampe_kjkkenbord
 
 - platform: group
   name: Stue
   entities:
-    - light.stue_bokhylle
-    - light.stue_sofa
-    - light.stue_stalampe
+    - light.vegglampe_bokhylle
+    - light.vegglampe_sofa
+    - light.stalampe
 
 - platform: group
   name: Gang
   entities:
-    - light.entre
+    - light.taklampe_entre
     - light.taklampe_gang
 
 - platform: group
@@ -23,6 +23,8 @@
     - light.tvstuea
     - light.tvstuek
     - light.tvsuem
+    - ligth.skrivebordslampe_andreas
+    - light.skrivebordslampe_kristian
     
 - platform: mqtt
   name: "Instillinger dagslys"
