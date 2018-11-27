@@ -24,6 +24,20 @@
     - light.tvstuek
     - light.tvsuem
     
+- platform: template
+  lights:
+    lampe_seksjon:
+      friendly_name: "Lampe seksjon"
+      value_template: "{{ states.switch.lampe_seksjon.state }}"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.lampe_seksjon
+      turn_off:
+        service: switch.turn_on
+        data:
+          entity_id: switch.lampe_seksjon
+    
 - platform: mqtt
   name: "Instillinger dagslys"
   state_topic: "daylight/rgb1/light/status"

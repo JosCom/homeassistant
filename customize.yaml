@@ -1,0 +1,5 @@
+light.taklampe_gang:
+  assumed_state: "off"
+  
+light.taklampe_soverom:
+  assumed_state: "off"
