@@ -1,8 +1,8 @@
 google_actions:
   filter:
     include_entities:
-      - light.taklampe_gang
-      - light.taklampe_soverom
+     
+
       - light.gang
       - light.stue
       - light.lekerom
