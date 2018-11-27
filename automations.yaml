@@ -7,6 +7,3 @@ action:
   - service: switch.turn_on
     data:
       entity_id: switch.automatisk_lys
-
-
-      
