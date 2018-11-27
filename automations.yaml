@@ -14,11 +14,12 @@ trigger:
   platform: state
   entity_id:
     - input_boolean.full_house
-    - input.boolean.home
-    - input.boolean.away
+    - input_boolean.home
+    - input_boolean.away
     - input_boolean.goodnight
     - input_boolean.goodmorning
+  to: "on"
 action:
   - service: input_boolean.turn_off
     data_template:
-      entity_id: {{trigger.entity_id}}
+      entity_id: "{{ trigger.entity_id }}"
