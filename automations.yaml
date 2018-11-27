@@ -20,5 +20,5 @@ trigger:
     - input_boolean.goodmorning
 action:
   - service: input_boolean.turn_off
-    data:
+    data_template:
       entity_id: {{trigger.entity_id}}
