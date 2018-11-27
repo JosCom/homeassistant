@@ -18,17 +18,17 @@
     - light.taklampe_gang
 
 - platform: group
-  name: Lekestue
+  name: Lekerom
   entities:
-    - light.taklampe_lekestue
+    - light.taklampe_lekerom
     - light.lampe_seksjon
     
 - platform: group
-  name: Taklampe lekestue
+  name: Taklampe lekerom
   entities:
     - light.tvstuea
     - light.tvstuek
-    - light.tvsuem
+    - light.tvstuem
     
 - platform: template
   lights:

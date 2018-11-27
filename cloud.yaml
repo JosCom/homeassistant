@@ -5,7 +5,7 @@ google_actions:
       - light.taklampe_soverom
       - light.gang
       - light.stue
-      - light.lekestue
+      - light.lekerom
       - light.kjkken
       - light.nattbordslampe_kristian
       - light.nattbordslampe_andreas
