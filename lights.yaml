@@ -22,6 +22,8 @@
   entities:
     - light.taklampe_lekerom
     - light.lampe_seksjon
+    - light.skrivebordslampe_kristian
+    - light.skrivebordslampe_andreas
     
 - platform: group
   name: Taklampe lekerom

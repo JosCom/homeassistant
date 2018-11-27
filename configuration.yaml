@@ -75,6 +75,7 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 input_select: !include input_select.yaml
 input_number: !include input_number.yaml
+input_boolean: !include input_boolean.yaml
 scene: !include scenes.yaml
 light: !include lights.yaml
 switch: !include switches.yaml

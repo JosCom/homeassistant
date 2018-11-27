@@ -1,8 +1,6 @@
 google_actions:
   filter:
     include_entities:
-     
-
       - light.gang
       - light.stue
       - light.lekerom
@@ -16,6 +14,20 @@ google_actions:
       - script.scene_test
       - switch.automatisk_lys
   entity_config:
+    light.gang:
+      room: Gang
+    light.stue:
+      room: Stue
+    light.lekerom:
+      room: Lekerom
+    light.kjkken:
+      room: Kjøkken
+    light.nattbordslampe_andreas:
+      room: Andreas soverom
+    light.nattbordslampe_kristian:
+      room: Kristian soverom
+    light.taklampe_soverom:
+      room: Hovedsoverom
     media_player.kitchen:
       name: Sonos kjøkken
       room: Kjøkken
