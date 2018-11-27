@@ -20,6 +20,12 @@
 - platform: group
   name: Lekestue
   entities:
+    - light.taklampe_lekestue
+    - light.lampe_seksjon
+    
+- platform: group
+  name: Taklampe Lekestue
+  entities:
     - light.tvstuea
     - light.tvstuek
     - light.tvsuem

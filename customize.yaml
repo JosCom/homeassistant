@@ -3,3 +3,15 @@ light.taklampe_gang:
   
 light.taklampe_soverom:
   assumed_state: "off"
+  
+switch.lampe_seksjon:
+  hidden: "true"
+  
+light.tvstuem:
+  hidden: "true"
+  
+light.tvstuea:
+  hidden: "true"
+  
+light.tvstuek:
+  hidden: "true"
