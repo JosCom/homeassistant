@@ -1,0 +1,14 @@
+full_house:
+  name: Fullt hus
+  
+home:
+  name: Hjemme
+  
+away:
+  name: Borte
+ 
+goodnight:
+  name: God natt
+  
+goodmorning:
+  name: God morgen
