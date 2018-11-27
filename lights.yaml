@@ -23,8 +23,6 @@
     - light.tvstuea
     - light.tvstuek
     - light.tvsuem
-    - ligth.skrivebordslampe_andreas
-    - light.skrivebordslampe_kristian
     
 - platform: mqtt
   name: "Instillinger dagslys"
