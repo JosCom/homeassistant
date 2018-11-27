@@ -1,25 +1,25 @@
-alias: homeassistant_start
-id: man0001
-trigger:
-  platform: homeassistant
-  event: start
-action:
-  - service: switch.turn_on
-    data:
-      entity_id: switch.automatisk_lys
+- alias: homeassistant_start
+  id: man0001
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.automatisk_lys
       
-alias: modereset
-id: man0002
-trigger:
-  platform: state
-  entity_id:
-    - input_boolean.full_house
-    - input_boolean.home
-    - input_boolean.away
-    - input_boolean.goodnight
-    - input_boolean.goodmorning
-  to: "on"
-action:
-  - service: input_boolean.turn_off
-    data_template:
-      entity_id: "{{ trigger.entity_id }}"
+- alias: modereset
+  id: man0002
+  trigger:
+    platform: state
+    entity_id:
+      - input_boolean.full_house
+      - input_boolean.home
+      - input_boolean.away
+      - input_boolean.goodnight
+      - input_boolean.goodmorning
+    to: "on"
+  action:
+    - service: input_boolean.turn_off
+      data_template:
+        entity_id: "{{ trigger.entity_id }}"
