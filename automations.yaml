@@ -7,3 +7,18 @@ action:
   - service: switch.turn_on
     data:
       entity_id: switch.automatisk_lys
+      
+alias: modereset
+id: man0002
+trigger:
+  platform: state
+  entity_id:
+    - input_boolean.full_house
+    - input.boolean.home
+    - input.boolean.away
+    - input_boolean.goodnight
+    - input_boolean.goodmorning
+action:
+  - service: input_boolean.turn_off
+    data:
+      entity_id: {{trigger.entity_id}}
