@@ -24,3 +24,18 @@ light.fullt_hus:
 
 light.normal:
   hidden: "true"
+
+input_boolean.home:
+  hidden: "true"
+
+input_boolean.away:
+  hidden: "true"
+
+input_boolean.goodmorning:
+  hidden: "true"
+
+input_boolean.goodnight:
+  hidden: "true"
+
+input_boolean.full_house:
+  hidden: "true"
