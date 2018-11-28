@@ -38,7 +38,7 @@
     - light.stue
     - light.kjkken
     - light.gang
-    - light.soverom
+    - light.taklampe_soverom
     - light.kontor
 
 - platform:: group
