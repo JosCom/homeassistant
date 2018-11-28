@@ -31,14 +31,14 @@
     - light.tvstuea
     - light.tvstuek
     - light.tvstuem
-#
-# - platform: group
-#   name: Normal
-#   entities:
-#     - light.stue
-#     - light.kjkken
-#     - light.gang
-#     - light.kontor
+
+- platform: group
+  name: Normal
+  entities:
+    - light.stue
+    - light.kjkken
+    - light.gang
+    - light.kontor
 #
 # - platform:: group
 #   name: Fullt hus
@@ -54,19 +54,19 @@
 #     - light.taklampe_entre
 #     - light.lampe_kjkkenbord
 #
-# - platform: template
-#   lights:
-#     lampe_seksjon:
-#       friendly_name: "Lampe seksjon"
-#       value_template: "{{ states.switch.lampe_seksjon.state }}"
-#       turn_on:
-#         service: switch.turn_on
-#         data:
-#           entity_id: switch.lampe_seksjon
-#       turn_off:
-#         service: switch.turn_off
-#         data:
-#           entity_id: switch.lampe_seksjon
+- platform: template
+  lights:
+    lampe_seksjon:
+      friendly_name: "Lampe seksjon"
+      value_template: "{{ states.switch.lampe_seksjon.state }}"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.lampe_seksjon
+      turn_off:
+        service: switch.turn_off
+        data:
+          entity_id: switch.lampe_seksjon
 # - platform: mqtt
 #   name: "Instillinger dagslys"
 #   state_topic: "daylight/rgb1/light/status"
