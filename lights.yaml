@@ -39,14 +39,14 @@
     - light.kjkken
     - light.gang
     - light.kontor
-#
-# - platform:: group
-#   name: Fullt hus
-#   entities:
-#     - light.normal
-#     - light.lekerom
-#     - light.nattbordslampe_kristian
-#     - light.nattbordslampe_andreas
+
+- platform:: group
+  name: Fullt hus
+  entities:
+    - light.normal
+    - light.lekerom
+    - light.nattbordslampe_kristian
+    - light.nattbordslampe_andreas
 #
 # - platform: group
 #   name: borte
