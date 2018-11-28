@@ -51,7 +51,7 @@
             Borte
           {%elif trigger.entity_id == "input_boolean.home" %}
             {%if state.input_boolean.full_house == "on" %}
-              Fullt hus
+              Fullt Hus
             {%elif state.input_boolean.full_house == "off" %}
               Normal
             {%endif%}
