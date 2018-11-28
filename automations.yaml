@@ -25,7 +25,7 @@
     - service: input_boolean.turn_off
       data_template:
         entity_id: >
-          {%if is_state_attr("input_boolean.home", "entity_id", "{{trigger.entity_id}}") %}
+          {%if "{{trigger.entity_id}}" is "input_boolean.home" %}
             "input_boolean.away"
           {%endif%}
 

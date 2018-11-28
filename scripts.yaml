@@ -68,6 +68,10 @@
 #       {%endif%}
 
 
+          {%if is_state_attr("input_boolean.home", "entity_id", "{{trigger.entity_id}}") %}
+            "input_boolean.away"
+          {%endif%}
+
           # {%if {{trigger.entity_id}} is "input_boolean.home" %}
           #   "input_boolean.away"
           # {%elif {{trigger.entity_id}} is input_boolean.away %}
