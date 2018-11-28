@@ -15,3 +15,12 @@ light.tvstuea:
 
 light.tvstuek:
   hidden: "true"
+
+light.borte:
+  hidden: "true"
+
+light.fullt_hus:
+  hidden: "true"
+
+light.normal:
+  hidden: "true"
