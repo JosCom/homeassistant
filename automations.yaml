@@ -24,14 +24,14 @@
   action:
     - service: input_boolean.turn_off
       data_template:
-        entity_id: 
+        entity_id: >
           {%if {{ trigger.entity_id }} is "input_boolean.home" %}
             - input_boolean.away
           {%elif { trigger.entity_id } is input_boolean.away %}
             - input_boolean.home
-          {%elif { trigger.entity_id } is input_boolean.goodnight}
+          {%elif { trigger.entity_id } is input_boolean.goodnight %}
             - input_boolean.goodmorning
-          {%elif { trigger.entity_id } is input_boolean.goodmorning}
+          {%elif { trigger.entity_id } is input_boolean.goodmorning %}
             - input_boolean.goodnight
           {%endif%}
         {%endif%}
