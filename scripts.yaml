@@ -7,16 +7,16 @@ scene_test:
 lightcontrol:
   sequence:
   - service: light.turn_on
-    data_template:
+    data_template: >
       {%if is_state('input_select.home_status', 'Normal') %}
-        {%if is_state('input_select.timeofday', 'Natt')}
+        {%if is_state('input_select.timeofday', 'Natt') %}
           - light.taklampe_entre
           - light.lampe_kjkken
         {%else%}
             - light.normal
         {%endif%}
       {%elif is_state('input_select.home_status', 'Fullt hus') %}
-        {%if is_state('input_select.timeofday', 'Natt')}
+        {%if is_state('input_select.timeofday', 'Natt') %}
           - light.taklampe_entre
           - light.lampe_kjkken
           - light.taklampe_grovkjkken
@@ -27,9 +27,9 @@ lightcontrol:
         - light.borte 
       {%endif%}     
   - service: light.turn_off
-    data_template:
+    data_template: >
       {%if is_state('input_select.home_status', 'Normal') %}
-        {%if is_state('input_select.timeofday', 'Natt')}
+        {%if is_state('input_select.timeofday', 'Natt') %}
           - light.lekerom
           - light.nattbordslampe_kristian
           - light.nattbordslampe_andreas
@@ -45,7 +45,7 @@ lightcontrol:
           - light.nattbordslampe_andreas
         {%endif%}
       {%elif is_state('input_select.home_status', 'Fullt hus') %}
-        {%if is_state('input_select.timeofday', 'Natt')}
+        {%if is_state('input_select.timeofday', 'Natt') %}
           - light.lekerom
           - light.nattbordslampe_kristian
           - light.nattbordslampe_andreas
