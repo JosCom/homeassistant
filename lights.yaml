@@ -4,70 +4,69 @@
     - light.taklampe_grovkjkken
     - light.lampe_kjkkenbord
 
-- platform: group
-  name: Stue
-  entities:
-    - light.vegglampe_bokhylle
-    - light.vegglampe_sofa
-    - light.stalampe
-
-- platform: group
-  name: Gang
-  entities:
-    - light.taklampe_entre
-    - light.taklampe_gang
-
-- platform: group
-  name: Lekerom
-  entities:
-    - light.taklampe_lekerom
-    - light.lampe_seksjon
-    - light.skrivebordslampe_kristian
-    - light.skrivebordslampe_andreas
-
-- platform: group
-  name: Taklampe lekerom
-  entities:
-    - light.tvstuea
-    - light.tvstuek
-    - light.tvstuem
-
-- platform: group
-  name: Normal
-  entities:
-    - light.stue
-    - light.kjkken
-    - light.gang
-    - light.kontor
-
-- platform:: group
-  name: Fullt hus
-  entities:
-    - light.normal
-    - light.lekerom
-    - light.nattbordslampe_kristian
-    - light.nattbordslampe_andreas
-
-- platform: group
-  name: borte
-  entities:
-    - light.taklampe_entre
-    - light.lampe_kjkkenbord
-
-- platform: template
-  lights:
-    lampe_seksjon:
-      friendly_name: "Lampe seksjon"
-      value_template: "{{ states.switch.lampe_seksjon.state }}"
-      turn_on:
-        service: switch.turn_on
-        data:
-          entity_id: switch.lampe_seksjon
-      turn_off:
-        service: switch.turn_off
-        data:
-          entity_id: switch.lampe_seksjon
-
+# - platform: group
+#   name: Stue
+#   entities:
+#     - light.vegglampe_bokhylle
+#     - light.vegglampe_sofa
+#     - light.stalampe
+#
+# - platform: group
+#   name: Gang
+#   entities:
+#     - light.taklampe_entre
+#     - light.taklampe_gang
+#
+# - platform: group
+#   name: Lekerom
+#   entities:
+#     - light.taklampe_lekerom
+#     - light.lampe_seksjon
+#     - light.skrivebordslampe_kristian
+#     - light.skrivebordslampe_andreas
+#
+# - platform: group
+#   name: Taklampe lekerom
+#   entities:
+#     - light.tvstuea
+#     - light.tvstuek
+#     - light.tvstuem
+#
+# - platform: group
+#   name: Normal
+#   entities:
+#     - light.stue
+#     - light.kjkken
+#     - light.gang
+#     - light.kontor
+#
+# - platform:: group
+#   name: Fullt hus
+#   entities:
+#     - light.normal
+#     - light.lekerom
+#     - light.nattbordslampe_kristian
+#     - light.nattbordslampe_andreas
+#
+# - platform: group
+#   name: borte
+#   entities:
+#     - light.taklampe_entre
+#     - light.lampe_kjkkenbord
+#
+# - platform: template
+#   lights:
+#     lampe_seksjon:
+#       friendly_name: "Lampe seksjon"
+#       value_template: "{{ states.switch.lampe_seksjon.state }}"
+#       turn_on:
+#         service: switch.turn_on
+#         data:
+#           entity_id: switch.lampe_seksjon
+#       turn_off:
+#         service: switch.turn_off
+#         data:
+#           entity_id: switch.lampe_seksjon
 # - platform: mqtt
 #   name: "Instillinger dagslys"
 #   state_topic: "daylight/rgb1/light/status"
