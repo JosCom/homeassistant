@@ -50,9 +50,9 @@
           {%elif trigger.entity_id == "input_boolean.away" %}
             Borte
           {%elif trigger.entity_id == "input_boolean.home" %}
-            {%if state.input_boolean.full_house == "on" %}
+            {%if is_state("input_boolean.full_house", "on") %}
               Fullt Hus
-            {%elif state.input_boolean.full_house == "off" %}
+            {%elif is_state("input_boolean.full_house","off") %}
               Normal
             {%endif%}
           {%endif%}
