@@ -47,13 +47,13 @@
     - light.lekerom
     - light.nattbordslampe_kristian
     - light.nattbordslampe_andreas
-#
-# - platform: group
-#   name: borte
-#   entities:
-#     - light.taklampe_entre
-#     - light.lampe_kjkkenbord
-#
+
+- platform: group
+  name: borte
+  entities:
+    - light.taklampe_entre
+    - light.lampe_kjkkenbord
+
 - platform: template
   lights:
     lampe_seksjon:
