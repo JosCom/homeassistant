@@ -1,12 +1,12 @@
-- alias: homeassistant_start
-  id: man0001
-  trigger:
-    platform: homeassistant
-    event: start
-  action:
-    - service: switch.turn_on
-      data:
-        entity_id: switch.automatisk_lys
+# - alias: homeassistant_start
+#   id: man0001
+#   trigger:
+#     platform: homeassistant
+#     event: start
+#   action:
+#     - service: switch.turn_on
+#       data:
+#         entity_id: switch.automatisk_lys
 
 # - alias: modeset
 #   id: man0002
