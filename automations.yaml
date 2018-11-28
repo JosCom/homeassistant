@@ -35,22 +35,24 @@
             input_boolean.goodnight
           {%endif%}
     - service: input_select.select_option
-      data_template: >
-        {%if trigger.entity_id == "input_boolean.goodmorning" %}
-          entity_id: input_select.timeofday
-          option: "Dag"
-        {%elif trigger.entity_id == "input_boolean.goodnight" %}
-          entity_id: input_select.timeofday
-          option: "Natt"
-        {%elif trigger.entity_id == "input_boolean.away" %}
-          entity_id: input_select.home_status
-          option: "Borte"
-        {%elif trigger.entity_id == "input_boolean.home" %}
-          {%if state.input_boolean.full_house == "on" %}
-            entity_id: input_select.home_status
-            option: "Fullt hus"
-          {%elif state.input_boolean.full_house == "off" %}
-            entity_id: input_select.home_status
-            option: "Normal"
+      data_template:
+        entity_id: >
+          {%if trigger.entity_id == "input_boolean.goodmorning" or trigger.entity_id == "input_boolean.goodnight" %}
+            input_select.timeofday
+          {%else%}
+            input_select.home_status
           {%endif%}
-        {%endif%}
+        option: >
+          {%if trigger.entity_id == "input_boolean.goodmorning" %}
+            Dag
+          {%elif trigger.entity_id == "input_boolean.goodnight" %}
+            Natt
+          {%elif trigger.entity_id == "input_boolean.away" %}
+            Borte
+          {%elif trigger.entity_id == "input_boolean.home" %}
+            {%if state.input_boolean.full_house == "on" %}
+              Fullt hus
+            {%elif state.input_boolean.full_house == "off" %}
+              Normal
+            {%endif%}
+          {%endif%}
