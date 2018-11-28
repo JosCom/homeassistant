@@ -24,14 +24,14 @@
     - light.lampe_seksjon
     - light.skrivebordslampe_kristian
     - light.skrivebordslampe_andreas
-    
+
 - platform: group
   name: Taklampe lekerom
   entities:
     - light.tvstuea
     - light.tvstuek
     - light.tvstuem
-    
+
 - platform: group
   name: Normal
   entities:
@@ -40,10 +40,10 @@
     - light.gang
     - light.soverom
     - light.kontor
-    
+
 - platform:: group
   name: Fullt hus
-  entities: 
+  entities:
     - light.normal
     - light.lekerom
     - light.nattbordslampe_kristian
@@ -54,7 +54,7 @@
   entities:
     - light.taklampe_entre
     - light.lampe_kjkkenbord
-    
+
 - platform: template
   lights:
     lampe_seksjon:
@@ -68,67 +68,67 @@
         service: switch.turn_off
         data:
           entity_id: switch.lampe_seksjon
-    
-- platform: mqtt
-  name: "Instillinger dagslys"
-  state_topic: "daylight/rgb1/light/status"
-  command_topic: "daylight/rgb1/light/switch"
-  brightness_state_topic: "daylight/rgb1/brightness/status"
-  brightness_command_topic: "daylight/rgb1/brightness/set"
-  rgb_state_topic: "daylight/rgb1/rgb/status"
-  rgb_command_topic: "daylight/rgb1/rgb/set"
-  state_value_template: "{{ value_json.state }}"
-  brightness_value_template: "{{ value_json.brightness }}"
-  rgb_value_template: "{{ value_json.rgb | join(',') }}"
-  qos: 0
-  payload_on: "ON"
-  payload_off: "OFF"
-  optimistic: false
-  
-- platform: mqtt
-  name: "Instillinger ettermiddagslys"
-  state_topic: "afternoonlight/rgb1/light/status"
-  command_topic: "afternoonlight/rgb1/light/switch"
-  brightness_state_topic: "afternoonlight/rgb1/brightness/status"
-  brightness_command_topic: "afternoonlight/rgb1/brightness/set"
-  rgb_state_topic: "afternoonlight/rgb1/rgb/status"
-  rgb_command_topic: "afternoonlight/rgb1/rgb/set"
-  state_value_template: "{{ value_json.state }}"
-  brightness_value_template: "{{ value_json.brightness }}"
-  rgb_value_template: "{{ value_json.rgb | join(',') }}"
-  qos: 0
-  payload_on: "ON"
-  payload_off: "OFF"
-  optimistic: false
-  
-- platform: mqtt
-  name: "Instillinger kveldslys"
-  state_topic: "eveninglight/rgb1/light/status"
-  command_topic: "eveninglight/rgb1/light/switch"
-  brightness_state_topic: "eveninglight/rgb1/brightness/status"
-  brightness_command_topic: "eveninglight/rgb1/brightness/set"
-  rgb_state_topic: "eveninglight/rgb1/rgb/status"
-  rgb_command_topic: "eveninglight/rgb1/rgb/set"
-  state_value_template: "{{ value_json.state }}"
-  brightness_value_template: "{{ value_json.brightness }}"
-  rgb_value_template: "{{ value_json.rgb | join(',') }}"
-  qos: 0
-  payload_on: "ON"
-  payload_off: "OFF"
-  optimistic: false
-  
-- platform: mqtt
-  name: "Instillinger nattlys"
-  state_topic: "nightlight/rgb1/light/status"
-  command_topic: "nightlight/rgb1/light/switch"
-  brightness_state_topic: "nightlight/rgb1/brightness/status"
-  brightness_command_topic: "nightlight/rgb1/brightness/set"
-  rgb_state_topic: "nightlight/rgb1/rgb/status"
-  rgb_command_topic: "nightlight/rgb1/rgb/set"
-  state_value_template: "{{ value_json.state }}"
-  brightness_value_template: "{{ value_json.brightness }}"
-  rgb_value_template: "{{ value_json.rgb | join(',') }}"
-  qos: 0
-  payload_on: "ON"
-  payload_off: "OFF"
-  optimistic: false
+
+# - platform: mqtt
+#   name: "Instillinger dagslys"
+#   state_topic: "daylight/rgb1/light/status"
+#   command_topic: "daylight/rgb1/light/switch"
+#   brightness_state_topic: "daylight/rgb1/brightness/status"
+#   brightness_command_topic: "daylight/rgb1/brightness/set"
+#   rgb_state_topic: "daylight/rgb1/rgb/status"
+#   rgb_command_topic: "daylight/rgb1/rgb/set"
+#   state_value_template: "{{ value_json.state }}"
+#   brightness_value_template: "{{ value_json.brightness }}"
+#   rgb_value_template: "{{ value_json.rgb | join(',') }}"
+#   qos: 0
+#   payload_on: "ON"
+#   payload_off: "OFF"
+#   optimistic: false
+#
+# - platform: mqtt
+#   name: "Instillinger ettermiddagslys"
+#   state_topic: "afternoonlight/rgb1/light/status"
+#   command_topic: "afternoonlight/rgb1/light/switch"
+#   brightness_state_topic: "afternoonlight/rgb1/brightness/status"
+#   brightness_command_topic: "afternoonlight/rgb1/brightness/set"
+#   rgb_state_topic: "afternoonlight/rgb1/rgb/status"
+#   rgb_command_topic: "afternoonlight/rgb1/rgb/set"
+#   state_value_template: "{{ value_json.state }}"
+#   brightness_value_template: "{{ value_json.brightness }}"
+#   rgb_value_template: "{{ value_json.rgb | join(',') }}"
+#   qos: 0
+#   payload_on: "ON"
+#   payload_off: "OFF"
+#   optimistic: false
+#
+# - platform: mqtt
+#   name: "Instillinger kveldslys"
+#   state_topic: "eveninglight/rgb1/light/status"
+#   command_topic: "eveninglight/rgb1/light/switch"
+#   brightness_state_topic: "eveninglight/rgb1/brightness/status"
+#   brightness_command_topic: "eveninglight/rgb1/brightness/set"
+#   rgb_state_topic: "eveninglight/rgb1/rgb/status"
+#   rgb_command_topic: "eveninglight/rgb1/rgb/set"
+#   state_value_template: "{{ value_json.state }}"
+#   brightness_value_template: "{{ value_json.brightness }}"
+#   rgb_value_template: "{{ value_json.rgb | join(',') }}"
+#   qos: 0
+#   payload_on: "ON"
+#   payload_off: "OFF"
+#   optimistic: false
+#
+# - platform: mqtt
+#   name: "Instillinger nattlys"
+#   state_topic: "nightlight/rgb1/light/status"
+#   command_topic: "nightlight/rgb1/light/switch"
+#   brightness_state_topic: "nightlight/rgb1/brightness/status"
+#   brightness_command_topic: "nightlight/rgb1/brightness/set"
+#   rgb_state_topic: "nightlight/rgb1/rgb/status"
+#   rgb_command_topic: "nightlight/rgb1/rgb/set"
+#   state_value_template: "{{ value_json.state }}"
+#   brightness_value_template: "{{ value_json.brightness }}"
+#   rgb_value_template: "{{ value_json.rgb | join(',') }}"
+#   qos: 0
+#   payload_on: "ON"
+#   payload_off: "OFF"
+#   optimistic: false
