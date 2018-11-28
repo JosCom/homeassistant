@@ -4,33 +4,33 @@
     - light.taklampe_grovkjkken
     - light.lampe_kjkkenbord
 
-# - platform: group
-#   name: Stue
-#   entities:
-#     - light.vegglampe_bokhylle
-#     - light.vegglampe_sofa
-#     - light.stalampe
-#
-# - platform: group
-#   name: Gang
-#   entities:
-#     - light.taklampe_entre
-#     - light.taklampe_gang
-#
-# - platform: group
-#   name: Lekerom
-#   entities:
-#     - light.taklampe_lekerom
-#     - light.lampe_seksjon
-#     - light.skrivebordslampe_kristian
-#     - light.skrivebordslampe_andreas
-#
-# - platform: group
-#   name: Taklampe lekerom
-#   entities:
-#     - light.tvstuea
-#     - light.tvstuek
-#     - light.tvstuem
+- platform: group
+  name: Stue
+  entities:
+    - light.vegglampe_bokhylle
+    - light.vegglampe_sofa
+    - light.stalampe
+
+- platform: group
+  name: Gang
+  entities:
+    - light.taklampe_entre
+    - light.taklampe_gang
+
+- platform: group
+  name: Lekerom
+  entities:
+    - light.taklampe_lekerom
+    - light.lampe_seksjon
+    - light.skrivebordslampe_kristian
+    - light.skrivebordslampe_andreas
+
+- platform: group
+  name: Taklampe lekerom
+  entities:
+    - light.tvstuea
+    - light.tvstuek
+    - light.tvstuem
 #
 # - platform: group
 #   name: Normal
