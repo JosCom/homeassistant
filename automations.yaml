@@ -29,6 +29,10 @@
             input_boolean.away
           {%elif trigger.entity_id == "input_boolean.away" %}
             input_boolean.home
+          {%elif trigger.entity_id == "input_boolean.goodnight" %}
+            input_boolean.goodmorning
+          {%elif trigger.entity_id == "input_boolean.goodmorning" %}
+            input_boolean.goodnight
           {%endif%}
 
 
