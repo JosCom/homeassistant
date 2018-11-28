@@ -40,7 +40,7 @@
     - light.gang
     - light.kontor
 
-- platform:: group
+- platform: group
   name: Fullt hus
   entities:
     - light.normal
