@@ -1,4 +1,4 @@
-# scene_test: 
+# scene_test:
 #   sequence:
 #   - service: scene.turn_on
 #     data:
@@ -66,3 +66,14 @@
 #         - light.taklampe_kontor
 #         - light.taklampe_grovkjkken
 #       {%endif%}
+
+
+          # {%if {{trigger.entity_id}} is "input_boolean.home" %}
+          #   "input_boolean.away"
+          # {%elif {{trigger.entity_id}} is input_boolean.away %}
+          #   "input_boolean.home"
+          # {%elif {{trigger.entity_id}} is input_boolean.goodnight %}
+          #   "input_boolean.goodmorning"
+          # {%elif {{trigger.entity_id}} is input_boolean.goodmorning %}
+          #   "input_boolean.goodnight"
+          # {%endif%}
