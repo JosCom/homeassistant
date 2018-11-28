@@ -34,7 +34,7 @@
           {%elif { trigger.entity_id } is input_boolean.goodmorning %}
             - input_boolean.goodnight
           {%endif%}
-    - service: input_select.select_option:
+    - service: input_select.select_option
       data_template: >
         {%if { trigger.entity_id } is input_boolean.goodmorning %}
           entity_id: input_select.timeofday
