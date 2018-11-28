@@ -1,10 +1,3 @@
-automate_lights:
-  name: Lysstyring
-  options:
-    - Automatisk
-    - Manuell
-  initial: Automatisk
-
 home_status:
   name: Hjemmestatus
   options:

@@ -32,6 +32,29 @@
     - light.tvstuek
     - light.tvstuem
     
+- platform: group
+  name: Normal
+  entities:
+    - light.stue
+    - light.kjkken
+    - light.gang
+    - light.soverom
+    - light.kontor
+    
+- platform:: group
+  name: Fullt hus
+  entities: 
+    - light.normal
+    - light.lekerom
+    - light.nattbordslampe_kristian
+    - light.nattbordslampe_andreas
+
+- platform: group
+  name: borte
+  entities:
+    - light.taklampe_entre
+    - light.lampe_kjkkenbord
+    
 - platform: template
   lights:
     lampe_seksjon:
