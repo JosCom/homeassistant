@@ -51,6 +51,10 @@
             Borte
           {%elif trigger.entity_id == "input_boolean.home" and is_state("input_boolean.full_house", "on") %}
             Fullt Hus
+          {%elif trigger.entity_id == "input_boolean.full_house" and trigger.to_state == "on" %}
+            Fullt Hus
           {%elif trigger.entity_id == "input_boolean.home" and is_state("input_boolean.full_house", "off") %}
+            Normal
+          {%elif trigger.entity_id == "input_boolean.full_house" and trigger.to_state == "off" %}
             Normal
           {%endif%}
