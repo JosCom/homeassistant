@@ -39,20 +39,32 @@ google_actions:
       name: Automatisk lys
       room: Panel
     input_boolean.home:
-      name: Hjemmemodus
       aliases:
+        - Hjemmemodus
         - Vi er hjemme
         - Jeg er hjemme
       room: Panel
     input_boolean.away:
-      name: bortemodus
       aliases:
+        - Bortemodus
         - Vi drar
         - Jeg drar
       room: Panel
     input_boolean.goodmorning:
+      aliases:
+        - Dagmodus
+        - God morgen
+        - God dag
       room: Panel
     input_boolean.goodnight:
+      aliases:
+        - Nattmodus
+        - God natt
       room: Panel
     input_boolean.full_house:
+      aliases:
+        - Fullt hus
+        - Andreas og Kristian er hjemme
+        - Andreas er hjemme 
+        - Kristian er hjemme
       room: Panel
