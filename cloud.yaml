@@ -41,8 +41,8 @@ google_actions:
     input_boolean.home:
       name: Hjemmemodus
       aliases:
-        - "Vi er hjemme"
-        - "Jeg er hjemme"
+        - Vi er hjemme
+        - Jeg er hjemme
       room: Panel
     input_boolean.away:
       room: Panel
