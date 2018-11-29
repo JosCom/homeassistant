@@ -45,6 +45,10 @@ google_actions:
         - Jeg er hjemme
       room: Panel
     input_boolean.away:
+      name: bortemodus
+      alias:
+        - Vi drar
+        - Jeg drar
       room: Panel
     input_boolean.goodmorning:
       room: Panel
