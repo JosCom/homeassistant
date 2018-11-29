@@ -25,16 +25,16 @@ light.fullt_hus:
 light.normal:
   hidden: "true"
 
-# input_boolean.home:
+# input_boolean.homemode:
 #   hidden: "true"
 #
-# input_boolean.away:
+# input_boolean.awaymode:
 #   hidden: "true"
 #
-# input_boolean.goodmorning:
+# input_boolean.daymode:
 #   hidden: "true"
 #
-# input_boolean.goodnight:
+# input_boolean.nightmode:
 #   hidden: "true"
 #
 # input_boolean.full_house:

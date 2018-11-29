@@ -1,14 +1,14 @@
 full_house:
   name: Fullt hus
-  
-home:
+
+homemode:
   name: Hjemme
-  
-away:
+
+awaymode:
   name: Borte
- 
-goodnight:
+
+nightmode:
   name: God natt
-  
-goodmorning:
+
+daymode:
   name: God morgen

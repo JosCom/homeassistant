@@ -13,10 +13,10 @@
   trigger:
     - platform: state
       entity_id:
-        - input_boolean.home
-        - input_boolean.away
-        - input_boolean.goodnight
-        - input_boolean.goodmorning
+        - input_boolean.homemode
+        - input_boolean.awaymode
+        - input_boolean.nightmode
+        - input_boolean.daymode
       to: "on"
     - platform: state
       entity_id:
@@ -25,35 +25,35 @@
     - service: input_boolean.turn_off
       data_template:
         entity_id: >
-          {%if trigger.entity_id == "input_boolean.home" %}
-            input_boolean.away
-          {%elif trigger.entity_id == "input_boolean.away" %}
-            input_boolean.home
-          {%elif trigger.entity_id == "input_boolean.goodnight" %}
-            input_boolean.goodmorning
-          {%elif trigger.entity_id == "input_boolean.goodmorning" %}
-            input_boolean.goodnight
+          {%if trigger.entity_id == "input_boolean.homemode" %}
+            input_boolean.awaymode
+          {%elif trigger.entity_id == "input_boolean.awaymode" %}
+            input_boolean.homemode
+          {%elif trigger.entity_id == "input_boolean.nightmode" %}
+            input_boolean.daymode
+          {%elif trigger.entity_id == "input_boolean.daymode" %}
+            input_boolean.nightmode
           {%endif%}
     - service: input_select.select_option
       data_template:
         entity_id: >
-          {%if trigger.entity_id == "input_boolean.goodmorning" or trigger.entity_id == "input_boolean.goodnight" %}
+          {%if trigger.entity_id == "input_boolean.daymode" or trigger.entity_id == "input_boolean.nightmode" %}
             input_select.timeofday
           {%else%}
             input_select.home_status
           {%endif%}
         option: >
-          {%if trigger.entity_id == "input_boolean.goodmorning" %}
+          {%if trigger.entity_id == "input_boolean.daymode" %}
             Dag
-          {%elif trigger.entity_id == "input_boolean.goodnight" %}
+          {%elif trigger.entity_id == "input_boolean.nightmode" %}
             Natt
-          {%elif trigger.entity_id == "input_boolean.away" %}
+          {%elif trigger.entity_id == "input_boolean.awaymode" %}
             Borte
-          {%elif trigger.entity_id == "input_boolean.home" and is_state("input_boolean.full_house", "on") %}
+          {%elif trigger.entity_id == "input_boolean.homemode" and is_state("input_boolean.full_house", "on") %}
             Fullt Hus
           {%elif trigger.entity_id == "input_boolean.full_house" and is_state("input_boolean.full_house", "on") %}
             Fullt Hus
-          {%elif trigger.entity_id == "input_boolean.home" and is_state("input_boolean.full_house", "off") %}
+          {%elif trigger.entity_id == "input_boolean.homemode" and is_state("input_boolean.full_house", "off") %}
             Normal
           {%elif trigger.entity_id == "input_boolean.full_house" and is_state("input_boolean.full_house", "off") %}
             Normal

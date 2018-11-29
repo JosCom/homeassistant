@@ -38,25 +38,27 @@ google_actions:
     switch.automatisk_lys:
       name: Automatisk lys
       room: Panel
-    input_boolean.home:
+    input_boolean.homemode:
       aliases:
         - Hjemmemodus
         - Vi er hjemme
         - Jeg er hjemme
       room: Panel
-    input_boolean.away:
+    input_boolean.awaymode:
       aliases:
         - Bortemodus
         - Vi drar
         - Jeg drar
+        - Vi drar bort
+        - Jeg drar bort
       room: Panel
-    input_boolean.goodmorning:
+    input_boolean.daymode:
       aliases:
         - Dagmodus
         - God morgen
         - God dag
       room: Panel
-    input_boolean.goodnight:
+    input_boolean.nightmode:
       aliases:
         - Nattmodus
         - God natt
