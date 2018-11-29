@@ -38,7 +38,7 @@
     - light.stue
     - light.kjkken
     - light.gang
-    - light.kontor
+    - light.taklampe_kontor
 
 - platform: group
   name: Fullt hus
