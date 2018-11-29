@@ -46,7 +46,7 @@ google_actions:
       room: Panel
     input_boolean.away:
       name: bortemodus
-      alias:
+      aliases:
         - Vi drar
         - Jeg drar
       room: Panel
