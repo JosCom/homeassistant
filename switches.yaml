@@ -1,10 +1,16 @@
 - platform: flux
   name: Automatisk lys
   lights:
-    - light.gang
-    - light.stue
-    - light.kjkken
-    - light.lekestue
+    - light.taklampe_gang
+    - light.taklampe_entre
+    - light.vegglampe_sofa
+    - light.vegglampe_bokhylle
+    - light.stalampe
+    - light.grovkjkken
+    - light.lampe_kjkkenbord
+    - light.taklampe_lekestue
+    - light.skrivebordslampe_andreas
+    - light.skrivebordslampe_kristian
     - light.taklampe_kontor
     - light.nattbordslampe_andreas
     - light.nattbordslampe_kristian
@@ -12,7 +18,7 @@
   start_time: '7:00'
   stop_time: '23:00'
   start_colortemp: 4400
-  sunset_colortemp: 3000 
+  sunset_colortemp: 3000
   stop_colortemp: 1000
 #  brightness: 200
   disable_brightness_adjust: False
