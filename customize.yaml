@@ -36,6 +36,6 @@ light.normal:
 #
 # input_boolean.goodnight:
 #   hidden: "true"
-
-input_boolean.full_house:
-  hidden: "true"
+#
+# input_boolean.full_house:
+#   hidden: "true"
