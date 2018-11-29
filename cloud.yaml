@@ -11,6 +11,9 @@ google_actions:
       - media_player.kitchen
       - media_player.living_room
       - switch.automatisk_lys
+    include_domains:
+      - input_boolean
+      
   entity_config:
     light.gang:
       room: Gang
@@ -34,4 +37,14 @@ google_actions:
       room: Stue
     switch.automatisk_lys:
       name: Automatisk lys
+      room: Panel
+    input_boolean.home:
+      room: Panel
+    input_boolean.away:
+      room: Panel
+    input.boolean.goodmorning:
+      room: Panel
+    input.boolean.goodnight:
+      room: Panel
+    input.boolean.full_house:
       room: Panel

@@ -58,3 +58,26 @@
           {%elif trigger.entity_id == "input_boolean.full_house" and is_state("input_boolean.full_house", "off") %}
             Normal
           {%endif%}
+
+- alias: moderun
+  id: man0003
+  trigger:
+    - platform: state
+      entity_id:
+        - input_select.home_status
+        - input_select.timeofday
+  action:
+    - service: script.turn_on
+      data_template:
+        entity_id: >
+          {%if is_state("input_select.home_status", "Fullt Hus") is_state("input_select.home_status", "Dag") %}
+            script.mode_home_day_full_house
+          {%elif is_state("input_select.home_status", "Normal") is_state("input_select.home_status", "Dag") %}
+            script.mode_home_day_normal
+          {%elif is_state("input_select.home_status", "Fullt Hus") is_state("input_select.home_status", "Natt") %}
+            script.mode_home_night_full_house
+          {%elif is_state("input_select.home_status", "Normal") is_state("input_select.home_status", "Natt") %}
+            script.mode_home_night_full_house
+          {%elif is_state("input_select.home_status", "Borte")%}
+            script.mode_away
+          {%endif%}

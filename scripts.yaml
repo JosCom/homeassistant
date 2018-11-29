@@ -4,67 +4,84 @@ scene_test:
     data:
       entity_id: scene.romantic
 
-# lightcontrol:
-#   sequence:
-#   - service: light.turn_on
-#     data_template:
-#       entity_id: >-
-#       {%if is_state('input_select.home_status', 'Normal') %}
-#         {%if is_state('input_select.timeofday', 'Natt') %}
-#           light.taklampe_entre
-#           light.lampe_kjkken
-#         {%else%}
-#             light.normal
-#         {%endif%}
-#       {%elif is_state('input_select.home_status', 'Fullt hus') %}
-#         {%if is_state('input_select.timeofday', 'Natt') %}
-#           light.taklampe_entre
-#           light.lampe_kjkken
-#           light.taklampe_grovkjkken
-#         {%else%}
-#             light.fullt_hus
-#         {%endif%}
-#       {%else%}
-#         light.borte
-#       {%endif%}
-#   - service: light.turn_off
-#     data_template:
-#       entity_id: >-
-#       {%if is_state('input_select.home_status', 'Normal') %}
-#         {%if is_state('input_select.timeofday', 'Natt') %}
-#           light.lekerom
-#           light.nattbordslampe_kristian
-#           light.nattbordslampe_andreas
-#           light.taklampe_soverom
-#           light.stue
-#           light.taklampe_gang
-#           light.taklampe_bod
-#           light.taklampe_kontor
-#           light.taklampe_grovkjkken
-#         {%else%}
-#           light.lekerom
-#           light.nattbordslampe_kristian
-#           light.nattbordslampe_andreas
-#         {%endif%}
-#       {%elif is_state('input_select.home_status', 'Fullt hus') %}
-#         {%if is_state('input_select.timeofday', 'Natt') %}
-#           light.lekerom
-#           light.nattbordslampe_kristian
-#           light.nattbordslampe_andreas
-#           light.taklampe_soverom
-#           light.stue
-#           light.taklampe_gang
-#           light.taklampe_bod
-#           light.taklampe_kontor
-#         {%endif%}
-#       {%else%}
-#         light.lekerom
-#         light.nattbordslampe_kristian
-#         light.nattbordslampe_andreas
-#         light.taklampe_soverom
-#         light.stue
-#         light.taklampe_gang
-#         light.taklampe_bod
-#         light.taklampe_kontor
-#         light.taklampe_grovkjkken
-#       {%endif%}
+mode_home_day_full_house:
+  sequence:
+    - service: homeassistant.turn_on
+      data:
+        entity_id:
+          - light.fullt_hus
+
+mode_home_day_normal:
+  sequence:
+    - service: homeassistant.turn_on
+      data:
+        entity_id:
+          - light.normal
+    - service: homeassistant.turn_off
+      data:
+        entity_id:
+          - light.lekerom
+          - light.nattbordslampe_andreas
+          - light.nattbordslampe_kristian
+
+mode_home_night_full_house:
+  sequence:
+    - service: homeassistant.turn_on
+      data:
+        entity_id:
+          - light.taklampe_entre
+          - light.lampe_kjkken
+          - light.taklampe_grovkjkken
+    - service: homeassistant.turn_off
+      data:
+        entity_id:
+          - light.lekerom
+          - light.nattbordslampe_kristian
+          - light.nattbordslampe_andreas
+          - light.taklampe_soverom
+          - light.stue
+          - light.taklampe_gang
+          - light.taklampe_bod
+          - light.taklampe_kontor
+
+mode_home_night_normal:
+  sequence:
+    - service: homeassistant.turn_on
+      data:
+        entity_id:
+          - light.taklampe_entre
+          - light.lampe_kjkken
+    - service: homeassistant.turn_off
+      data:
+        entity_id:
+          - light.lekerom
+          - light.nattbordslampe_kristian
+          - light.nattbordslampe_andreas
+          - light.taklampe_soverom
+          - light.stue
+          - light.taklampe_gang
+          - light.taklampe_bod
+          - light.taklampe_kontor
+          - light.taklampe_grovkjkken
+
+mode_away:
+  sequence:
+    - service: homeassistant.turn_on
+      data:
+        entity_id:
+          - light.taklampe_entre
+          - light.lampe_kjkken
+          - light.vegglampe_bokhylle
+    - service: homeassistant.turn_off
+      data:
+        entity_id:
+          - light.lekerom
+          - light.nattbordslampe_kristian
+          - light.nattbordslampe_andreas
+          - light.taklampe_soverom
+          - light.stalampe
+          - light.vegglampe_sofa
+          - light.taklampe_gang
+          - light.taklampe_bod
+          - light.taklampe_kontor
+          - light.taklampe_grovkjkken
