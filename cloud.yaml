@@ -39,7 +39,10 @@ google_actions:
       name: Automatisk lys
       room: Panel
     input_boolean.home:
-      name: homemode
+      name: Hjemmemodus
+      alias:
+        - "Vi er hjemme"
+        - "Jeg er hjemme"
       room: Panel
     input_boolean.away:
       room: Panel
