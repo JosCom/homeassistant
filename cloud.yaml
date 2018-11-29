@@ -65,6 +65,9 @@ google_actions:
       aliases:
         - Fullt hus
         - Andreas og Kristian er hjemme
-        - Andreas er hjemme 
+        - Andreas er hjemme
         - Kristian er hjemme
       room: Panel
+
+
+#
