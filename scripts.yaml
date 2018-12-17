@@ -10,6 +10,7 @@ mode_home_day_full_house:
       data:
         entity_id:
           - light.fullt_hus
+          - switch.automatisk_lys
 
 mode_home_day_normal:
   sequence:
@@ -17,6 +18,7 @@ mode_home_day_normal:
       data:
         entity_id:
           - light.normal
+          - switch.automatisk_lys
     - service: homeassistant.turn_off
       data:
         entity_id:
@@ -43,6 +45,7 @@ mode_home_night_full_house:
           - light.taklampe_gang
           - light.taklampe_bod
           - light.taklampe_kontor
+          - switch.automatisk_lys
 
 mode_home_night_normal:
   sequence:
@@ -63,6 +66,7 @@ mode_home_night_normal:
           - light.taklampe_bod
           - light.taklampe_kontor
           - light.taklampe_grovkjkken
+          - switch.automatisk_lys
 
 mode_away:
   sequence:
@@ -85,3 +89,4 @@ mode_away:
           - light.taklampe_bod
           - light.taklampe_kontor
           - light.taklampe_grovkjkken
+          - switch.automatisk_lys
