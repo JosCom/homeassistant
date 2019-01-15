@@ -12,9 +12,6 @@
     - light.skrivebordslampe_andreas
     - light.skrivebordslampe_kristian
     - light.taklampe_kontor
-    - light.nattbordslampe_andreas
-    - light.nattbordslampe_kristian
-    - light.taklampe_soverom
   start_time: '7:00'
   stop_time: '23:00'
   start_colortemp: 4400
