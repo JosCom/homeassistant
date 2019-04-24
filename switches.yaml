@@ -21,4 +21,4 @@
   disable_brightness_adjust: False
   mode: mired
   transition: 30
-  interval: 30
+  interval: 120
