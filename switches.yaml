@@ -20,5 +20,5 @@
 #  brightness: 200
   disable_brightness_adjust: False
   mode: mired
-# transition: 1
-  interval: 300
+  transition: 0
+  interval: 60
