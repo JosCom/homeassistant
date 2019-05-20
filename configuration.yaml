@@ -75,6 +75,8 @@ mqtt:
 tellduslive:
   host: 192.168.1.11
 
+system_health:
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
