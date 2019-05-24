@@ -32,7 +32,7 @@ cards:
             type: light
         type: vertical-stack
       - card:
-          columns: 1
+          columns: 2
           show_state: false
           type: glance
         entities:
@@ -52,6 +52,8 @@ cards:
           - light.taklampe_soverom
           - light.vegglampe_bokhylle
           - light.vegglampe_sofa
+          - entity: switch.stue_peis
+            name: Telt
         state_filter:
           - 'on'
         type: entity-filter

@@ -1,0 +1,26 @@
+type: entity-filter
+card:
+  columns: 2
+  show_state: false
+  type: glance
+entities:
+          - light.lampe_kjkkenbord
+          - light.lampe_seksjon
+          - light.nattbordslampe_andreas
+          - light.nattbordslampe_kristian
+          - light.skrivebordslampe_andreas
+          - light.skrivebordslampe_kristian
+          - light.stalampe
+          - light.taklampe_bod
+          - light.taklampe_entre
+          - light.taklampe_gang
+          - light.taklampe_grovkjkken
+          - light.taklampe_kontor
+          - light.taklampe_lekerom
+          - light.taklampe_soverom
+          - light.vegglampe_bokhylle
+          - light.vegglampe_sofa
+          - entity: switch.stue_peis
+            name: Telt
+state_filter:
+  - 'on'
