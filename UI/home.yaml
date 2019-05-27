@@ -24,3 +24,16 @@ entities:
             name: Telt
 state_filter:
   - 'on'
+
+type: conditional
+conditions:
+  - entity: light.taklampe_entre
+    state: "unavailable"
+card:
+  type: entities
+  entities:
+    - switch.free3
+    - type: call service
+      name: Restart Homeassistant
+      service: homeassistant.restart
+      icon: mdi:restart
