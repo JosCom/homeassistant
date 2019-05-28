@@ -81,6 +81,7 @@ panel_iframe:
   router:
     title: 'Router'
     url: 'http://192.168.1.1'
+    icon: mdi:router-wireless-setting
 
 group: !include groups.yaml
 automation: !include automations.yaml
