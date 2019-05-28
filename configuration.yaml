@@ -77,6 +77,11 @@ tellduslive:
 
 system_health:
 
+panel_iframe:
+  router:
+    title: 'Router'
+    url: 'http://192.168.1.1'
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
