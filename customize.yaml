@@ -1,29 +1,29 @@
 light.taklampe_gang:
-  assumed_state: "off"
-
+  assumed_state: 'off'
 light.taklampe_soverom:
-  assumed_state: "off"
-
+  assumed_state: 'off'
 switch.lampe_seksjon:
-  hidden: "true"
-
+  hidden: 'true'
 light.tvstuem:
-  hidden: "true"
-
+  hidden: 'true'
 light.tvstuea:
-  hidden: "true"
-
+  hidden: 'true'
 light.tvstuek:
-  hidden: "true"
-
+  hidden: 'true'
 light.borte:
-  hidden: "true"
-
+  hidden: 'true'
 light.fullt_hus:
-  hidden: "true"
-
+  hidden: 'true'
 light.normal:
-  hidden: "true"
+  hidden: 'true'
+person.andreas:
+  entity_picture: https://lh3.googleusercontent.com/KFghs5Tqjz_oIxgAggB26p10cAnDGABanYbSUrwqGX4Urpb2b14SnWiLMOTo9w-caCLJ=s85
+person.kristian:
+  entity_picture: https://lh3.googleusercontent.com/-j6Qkcpt8hpe0HZr9cYm2-8u7-U2vHV9HJf0yP1DgMIhoAssA27xYbdSH7Rm9IkD_mXLHg=s85
+person.cecilie:
+  entity_picture: https://lh3.googleusercontent.com/K-1u1i_Lpw4IfL91j2WgptwAl7R6H84eb5ExGqQ5Fv4_fqgVNqSOpz_JnNfifeCBbpNSRA=s85
+person.jostein:
+  entity_picture: https://lh3.googleusercontent.com/u3_nXMfI6Tr2GLnX6oJ7R7IzrY-2YDXNsbJZV9amXcxNWePWxeGNPCdzeZFY1Ezsmw0MdQ=s85
 
 # input_boolean.homemode:
 #   hidden: "true"
