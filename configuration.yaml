@@ -84,7 +84,7 @@ googlehome:
 panel_iframe:
   router:
     title: 'Router'
-    url: 'http://192.168.1.1'
+    url: 'http://192.168.1.1/cgi-bin/luci'
     icon: mdi:router-wireless-setting
 
 group: !include groups.yaml
@@ -96,4 +96,4 @@ input_boolean: !include input_boolean.yaml
 scene: !include scenes.yaml
 light: !include lights.yaml
 switch: !include switches.yaml
-person: !include persons.yaml
+person: # !include persons.yaml
