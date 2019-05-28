@@ -1,0 +1,11 @@
+- name: Jostein
+  id: stoen001
+  user_id: 0becce61b2ef45b0a31ff14300b7b636
+  device_trackers:
+    - device_tracker.192_168_1_167_c4_7e_b2_fd_59_2e
+- name: Andreas
+  id: stoen002
+  user_id: 636fb4dbc5e645059b86aafa5c8515f6
+  device_trackers:
+    - device_tracker.stacey
+    - device_tracker.beacon
