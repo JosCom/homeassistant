@@ -85,7 +85,7 @@ panel_iframe:
   router:
     title: 'Router'
     url: 'http://192.168.1.1/cgi-bin/luci'
-    icon: mdi:router-wireless-setting
+    icon: google:router-wireless-setting
 
 device_tracker:
   - platform: luci
@@ -97,6 +97,12 @@ climate:
   - platform: mill
     username: jostein@stoen.net
     password: !secret home_password
+
+netatmo:
+  api_key: !secret netatmo_id
+  secret_key: !secret netatmo_secret
+  username: jostein@stoen.net
+  password: !secret home_password
 
 group: !include groups.yaml
 automation: !include automations.yaml
