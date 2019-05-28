@@ -12,6 +12,10 @@
   trigger:
     - platform: time_pattern
       minutes: '/30'
+    - platform: state
+      entity_id: input_select.home_status
+    - platform: state
+      entity_id: input_select.timeofday
   action:
     - service: switch.automatisk_lys_update
 
