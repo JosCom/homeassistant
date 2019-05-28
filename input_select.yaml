@@ -4,7 +4,6 @@ home_status:
     - Fullt Hus
     - Normal
     - Borte
-  initial: Normal
 
 timeofday:
   name: Tid på dagen
@@ -13,5 +12,3 @@ timeofday:
     - Ettermiddag
     - Kveld
     - Natt
-  initial: Natt
-
