@@ -77,6 +77,10 @@ tellduslive:
 
 system_health:
 
+googlehome:
+  devices:
+    - host: 192.168.1.167
+
 panel_iframe:
   router:
     title: 'Router'
