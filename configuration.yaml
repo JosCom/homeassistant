@@ -87,7 +87,8 @@ panel_iframe:
   router:
     title: 'Router'
     url: 'http://192.168.1.1/cgi-bin/luci'
-    icon: google:router-wireless-setting
+    icon: mdi:lan
+    require_admin: true
 
 device_tracker:
   - platform: luci
