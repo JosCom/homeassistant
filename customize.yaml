@@ -21,9 +21,9 @@ person.andreas:
 person.kristian:
   entity_picture: https://lh3.googleusercontent.com/-j6Qkcpt8hpe0HZr9cYm2-8u7-U2vHV9HJf0yP1DgMIhoAssA27xYbdSH7Rm9IkD_mXLHg=s85
 person.cecilie:
-  entity_picture: https://lh3.googleusercontent.com/K-1u1i_Lpw4IfL91j2WgptwAl7R6H84eb5ExGqQ5Fv4_fqgVNqSOpz_JnNfifeCBbpNSRA=s85
+  entity_picture: https://scontent.fosl3-2.fna.fbcdn.net/v/t1.0-1/p160x160/46362732_10160994040480004_387894568269381632_n.jpg?_nc_cat=111&_nc_ht=scontent.fosl3-2.fna&oh=6d8eccff54c332388831832625a687c7&oe=5D8BF867
 person.jostein:
-  entity_picture: https://lh3.googleusercontent.com/u3_nXMfI6Tr2GLnX6oJ7R7IzrY-2YDXNsbJZV9amXcxNWePWxeGNPCdzeZFY1Ezsmw0MdQ=s85
+  entity_picture: https://scontent.fosl3-1.fna.fbcdn.net/v/t1.0-1/p160x160/33171971_10155280474651400_7250185506120531968_n.jpg?_nc_cat=106&_nc_ht=scontent.fosl3-1.fna&oh=3e9f47a52989f1b0b4a5c7092a4b8033&oe=5D596E94
 
 # input_boolean.homemode:
 #   hidden: "true"
