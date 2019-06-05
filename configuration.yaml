@@ -50,7 +50,7 @@ conversation:
 history:
 
 recorder:
-  db_url: mysql://hass:!secret home_password@core-mariadb/homeassistant?charset=utf8
+  db_url: !secret maria_db
 
 # View all events in a logbook
 logbook:
