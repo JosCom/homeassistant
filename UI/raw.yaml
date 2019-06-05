@@ -1,0 +1,180 @@
+title: Home
+views:
+  - badges:
+      - sensor.yr_symbol
+      - sensor.inne_kjokken_temperature
+      - sensor.ute_inngang_temperature_2
+      - sensor.ute_terasse_temperature_2
+      - sensor.ute_inngang_humidity_2
+    cards:
+      - card:
+          columns: 4
+          show_state: false
+          title: People at home
+          type: glance
+        entities:
+          - person.jostein
+          - person.cecilie
+          - person.andreas
+          - person.kristian
+        state_filter:
+          - home
+        type: entity-filter
+      - card:
+          entities:
+            - switch.free3
+            - icon: 'mdi:restart'
+              name: Restart Homeassistant
+              service: homeassistant.restart
+              type: call-service
+          type: entities
+        conditions:
+          - entity: light.taklampe_entre
+            state: unavailable
+        type: conditional
+      - entities:
+          - entity: input_select.timeofday
+          - entity: input_select.home_status
+        title: Status
+        type: glance
+      - card:
+          columns: 2
+          show_state: false
+          type: glance
+        entities:
+          - light.lampe_kjkkenbord
+          - light.lampe_seksjon
+          - light.nattbordslampe_andreas
+          - light.nattbordslampe_kristian
+          - light.skrivebordslampe_andreas
+          - light.skrivebordslampe_kristian
+          - light.stalampe
+          - light.taklampe_bod
+          - light.taklampe_entre
+          - light.taklampe_gang
+          - light.taklampe_grovkjkken
+          - light.taklampe_kontor
+          - light.taklampe_lekerom
+          - light.taklampe_soverom
+          - light.vegglampe_bokhylle
+          - light.vegglampe_sofa
+          - entity: switch.stue_peis
+            name: Telt
+        state_filter:
+          - 'on'
+        type: entity-filter
+      - card:
+          columns: 2
+          show_state: false
+          type: glance
+        entities:
+          - light.lampe_kjkkenbord
+          - light.lampe_seksjon
+          - light.nattbordslampe_andreas
+          - light.nattbordslampe_kristian
+          - light.skrivebordslampe_andreas
+          - light.skrivebordslampe_kristian
+          - light.stalampe
+          - light.taklampe_bod
+          - light.taklampe_entre
+          - light.taklampe_gang
+          - light.taklampe_grovkjkken
+          - light.taklampe_kontor
+          - light.taklampe_lekerom
+          - light.taklampe_soverom
+          - light.vegglampe_bokhylle
+          - light.vegglampe_sofa
+          - entity: switch.stue_peis
+            name: Telt
+        state_filter:
+          - 'off'
+        type: entity-filter
+    path: default_view
+    title: Home
+  - badges: []
+    cards:
+      - cards:
+          - cards:
+              - entity: sensor.ute_inngang_temperature_2
+                graph: line
+                name: Inngang
+                type: sensor
+              - entity: sensor.ute_terasse_temperature_2
+                graph: line
+                name: Terasse
+                type: sensor
+              - entity: sensor.inne_kjokken_temperature
+                graph: line
+                name: Kjøkken
+                type: sensor
+              - entity: sensor.ute_inngang_humidity_2
+                graph: line
+                name: Luftfuktighet
+                type: sensor
+            type: horizontal-stack
+          - cards:
+              - cards:
+                  - entity: light.stue
+                    name: Stue
+                    type: light
+                  - entity: light.gang
+                    name: Gang
+                    type: light
+                type: vertical-stack
+              - cards:
+                  - entity: light.kjokken
+                    name: Kjøkken
+                    type: light
+                type: vertical-stack
+              - card:
+                  columns: 2
+                  show_state: false
+                  type: glance
+                entities:
+                  - light.lampe_kjkkenbord
+                  - light.lampe_seksjon
+                  - light.nattbordslampe_andreas
+                  - light.nattbordslampe_kristian
+                  - light.skrivebordslampe_andreas
+                  - light.skrivebordslampe_kristian
+                  - light.stalampe
+                  - light.taklampe_bod
+                  - light.taklampe_entre
+                  - light.taklampe_gang
+                  - light.taklampe_grovkjkken
+                  - light.taklampe_kontor
+                  - light.taklampe_lekerom
+                  - light.taklampe_soverom
+                  - light.vegglampe_bokhylle
+                  - light.vegglampe_sofa
+                  - entity: switch.stue_peis
+                    name: Telt
+                state_filter:
+                  - 'on'
+                type: entity-filter
+              - columns: 1
+                entities:
+                  - input_select.home_status
+                  - input_select.timeofday
+                show_name: false
+                type: glance
+            type: horizontal-stack
+        type: vertical-stack
+    panel: true
+    path: panel
+    theme: amoled
+    title: Panel
+  - badges: []
+    cards:
+      - entities:
+          - entity: climate.panel_kristian
+          - entity: climate.panelovn_andreas
+          - entity: climate.panelovn_gang
+          - entity: climate.panelovn_kjokken
+          - entity: climate.panelovn_soverom
+          - entity: climate.panelovn_tomine
+        type: entities
+    title: Climate
+  - badges: []
+    cards: []
+    title: Weather
