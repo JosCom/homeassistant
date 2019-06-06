@@ -14,6 +14,7 @@ google_actions:
       - switch.stue_peis
     include_domains:
       - input_boolean
+      - climate
 
   entity_config:
     light.gang:
