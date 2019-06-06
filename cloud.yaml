@@ -76,6 +76,12 @@ google_actions:
       name: Telt
       aliases:
         - Tomine sitt Telt
+    climate.soverom_andreas:
+      room: Andreas soverom
+    climate.soverom_kristian:
+      room: Kristian soverom
+    climate.gang:
+      room: Gang
 
 
 #
