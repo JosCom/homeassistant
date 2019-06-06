@@ -83,7 +83,7 @@ tts:
   - platform: google_translate
 
 # Cloud
-cloud: !include cloud.yaml
+cloud: #!include cloud.yaml
 
 mqtt:
   broker: 192.168.1.10
