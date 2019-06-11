@@ -101,6 +101,6 @@
   action:
     - service: script.turn_on
       entity: script.restart_home
-    - service: notify.notify_jostein
-      data:
-        message: Homeserver restarted
+    # - service: notify.notify_jostein
+    #   data:
+    #     message: Homeserver restarted
