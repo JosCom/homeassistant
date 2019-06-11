@@ -100,6 +100,6 @@
       to: 'unavailable'
   action:
     - service: script.restart_home
-    - service: notify.Notify_Jostein
+    - service: notify.notify_jostein
       data:
-        message: Homeserver restarted
+        message: "Homeserver restarted"

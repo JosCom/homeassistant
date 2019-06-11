@@ -133,6 +133,6 @@ switch: !include switches.yaml
 person: # !include persons.yaml
 
 notify:
-  - name: Notify_Jostein
+  - name: notify_jostein
     platform: simplepush
     device_key: BkBZ97
