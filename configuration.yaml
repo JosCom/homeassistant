@@ -97,6 +97,11 @@ googlehome:
   devices:
     - host: 192.168.1.167
 
+notify:
+  - name: jostein
+    platform: simplepush
+    device_key: BkBZ97
+
 panel_iframe:
   router:
     title: 'Router'
@@ -131,8 +136,3 @@ scene: !include scenes.yaml
 light: !include lights.yaml
 switch: !include switches.yaml
 person: # !include persons.yaml
-
-notify:
-  - name: notify_jostein
-    platform: simplepush
-    device_key: BkBZ97
