@@ -96,7 +96,8 @@
 - alias: restart_home
   id: man0004
   trigger:
-    - entity: light.taklampe_entre
+    - platform: state
+      entity: light.taklampe_entre
       to: 'Unavailable'
   action:
     - service: script.restart_home
