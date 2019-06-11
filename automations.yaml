@@ -92,3 +92,11 @@
           {%elif is_state("input_select.home_status", "Borte")%}
             script.mode_away
           {%endif%}
+
+- alias: restart_home
+  id: man0004
+  trigger:
+    - entity: light.taklampe_entre
+      to: 'unavailable'
+  action:
+    - service: script.restart_home
