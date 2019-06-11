@@ -100,7 +100,8 @@
       entity: light.taklampe_entre
       to: 'Unavailable'
   action:
-    - service: script.restart_home
+    - service: script.turn_on
+      entity: script.restart_home
     # - service: notify.notify_jostein
     #   data:
     #     message: Homeserver restarted
