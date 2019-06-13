@@ -12,8 +12,8 @@
     - light.skrivebordslampe_andreas
     - light.skrivebordslampe_kristian
     - light.taklampe_kontor
-  start_time: '7:00'
-  stop_time: '23:00'
+#  start_time: '7:00'
+#  stop_time: '23:00'
   start_colortemp: 4400
   sunset_colortemp: 3000
   stop_colortemp: 1000
