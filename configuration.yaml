@@ -110,10 +110,10 @@ panel_iframe:
     require_admin: true
 
 device_tracker:
-  - platform: luci
-    host: 192.168.1.1
-    username: root
-    password: !secret home_password
+  # - platform: luci
+  #   host: 192.168.1.1
+  #   username: root
+  #   password: !secret home_password
 
 climate:
   - platform: mill
