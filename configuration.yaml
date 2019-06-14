@@ -61,9 +61,9 @@ recorder:
 
 # View all events in a logbook
 logbook:
-  exclude:
-    domains:
-      - device_tracker
+  # exclude:
+  #   domains:
+  #     - device_tracker
 
 
 logger:
