@@ -105,3 +105,15 @@
     - service: notify.jostein
       data:
         message: Homeserver restarted
+        
+
+
+- action:
+  - data:
+      entity_id: switch.automatisk_lys
+    service: switch.turn_on
+  alias: enable flux on platform start
+  id: man0005
+  trigger:
+  - event: start
+    platform: homeassistant
