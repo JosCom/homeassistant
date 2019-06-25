@@ -93,8 +93,8 @@ tellduslive:
 
 system_health:
 
-climate:
-  - platform: zwave
+
+
 
 googlehome:
   devices:
@@ -122,6 +122,7 @@ climate:
   - platform: mill
     username: jostein@stoen.net
     password: !secret home_password
+  - platform: zwave
 
 netatmo:
   api_key: !secret netatmo_id
