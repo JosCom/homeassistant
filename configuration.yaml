@@ -9,7 +9,7 @@ homeassistant:
   # metric for Metric, imperial for Imperial
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  time_zone: UTC
+  time_zone: Europe/Oslo
   # Customization file
   customize: !include customize.yaml
 
@@ -61,9 +61,9 @@ recorder:
 
 # View all events in a logbook
 logbook:
-  exclude:
-    domains:
-      - device_tracker
+  # exclude:
+  #   domains:
+  #     - device_tracker
 
 
 logger:
@@ -93,6 +93,9 @@ tellduslive:
 
 system_health:
 
+climate:
+  - platform: zwave
+
 googlehome:
   devices:
     - host: 192.168.1.167
@@ -110,10 +113,10 @@ panel_iframe:
     require_admin: true
 
 device_tracker:
-  - platform: luci
-    host: 192.168.1.1
-    username: root
-    password: !secret home_password
+  # - platform: luci
+  #   host: 192.168.1.1
+  #   username: root
+  #   password: !secret home_password
 
 climate:
   - platform: mill
