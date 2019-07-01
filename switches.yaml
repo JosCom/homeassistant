@@ -6,11 +6,9 @@
     - light.vegglampe_sofa
     - light.vegglampe_bokhylle
     - light.stalampe
-    - light.grovkjkken
+    - light.taklampe_grovkjkken
     - light.lampe_kjkkenbord
-    - light.taklampe_lekestue
-    - light.skrivebordslampe_andreas
-    - light.skrivebordslampe_kristian
+    - light.taklampe_lekerom
     - light.taklampe_kontor
   start_time: '7:00'
   stop_time: '23:00'
