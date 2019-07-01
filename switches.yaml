@@ -8,7 +8,9 @@
     - light.stalampe
     - light.taklampe_grovkjkken
     - light.lampe_kjkkenbord
-    - light.taklampe_lekerom
+    - light.tvstuem
+    - light.tvstuea
+    - light.tvstuek
     - light.taklampe_kontor
   start_time: '7:00'
   stop_time: '23:00'
