@@ -7,7 +7,7 @@
 #     - service: switch.turn_on
 #       data:
 #         entity_id: switch.automatisk_lys
-- alias: flux
+- alias: Flux
   id: man0001
   trigger:
     - platform: time_pattern
@@ -93,26 +93,26 @@
             script.mode_away
           {%endif%}
 
-- alias: restart_home
-  id: man0004
-  trigger:
-    - platform: state
-      entity_id: light.taklampe_entre
-      to: 'unavailable'
-  action:
-    - service: script.turn_on
-      entity_id: script.restart_home
-    - service: notify.jostein
-      data:
-        message: Homeserver restarted
-        
+# - alias: restart_home
+#   id: man0004
+#   trigger:
+#     - platform: state
+#       entity_id: light.taklampe_entre
+#       to: 'unavailable'
+#   action:
+#     - service: script.turn_on
+#       entity_id: script.restart_home
+#     - service: notify.jostein
+#       data:
+#         message: Homeserver restarted
+
 
 
 - action:
   - data:
       entity_id: switch.automatisk_lys
     service: switch.turn_on
-  alias: enable flux on platform start
+  alias: Enable flux on platform start
   id: man0005
   trigger:
   - event: start
