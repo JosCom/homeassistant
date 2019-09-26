@@ -93,13 +93,6 @@ tellduslive:
 
 system_health:
 
-
-
-
-googlehome:
-  devices:
-    - host: 192.168.1.167
-
 notify:
   - name: jostein
     platform: simplepush
