@@ -37,3 +37,11 @@ card:
       name: Restart Homeassistant
       service: homeassistant.restart
       icon: mdi:restart
+
+entities:
+  - entity: input_select.timeofday
+    tap_action:
+      action: toggle
+  - entity: input_select.home_status
+title: Status
+type: glance
