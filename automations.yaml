@@ -121,8 +121,8 @@
 - action:
   - data:
       entity_id: input_select.home_status
+      option: Borte
     service: input_select.select_option
-    option: Borte
   alias: Leave Home
   id: man0006
   trigger:
