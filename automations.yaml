@@ -120,8 +120,9 @@
 
 - action:
   - data:
-      entity_id: input_boolean.awaymode
-    service: input_boolean.turn_on
+      entity_id: input_select.home_status
+    service: input_select.select_option
+    option: Borte
   alias: Leave Home
   id: man0006
   trigger:
