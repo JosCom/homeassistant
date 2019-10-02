@@ -110,10 +110,22 @@
 
 - action:
   - data:
-      entity_id: switch.automatisk_lys
+    entity_id: switch.automatisk_lys
     service: switch.turn_on
   alias: Enable flux on platform start
   id: man0005
   trigger:
   - event: start
     platform: homeassistant
+
+- action:
+  - data:
+    entity_id: input_boolean.awaymode
+    service: input_boolean.turn_on
+  alias: Leave Home
+  id: man0006
+  trigger:
+  - platform: state
+    entity_id:
+      - switch.bryter_gang_1
+    to: "off"
