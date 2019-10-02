@@ -129,3 +129,15 @@
   - platform: state
     entity_id: switch.bryter_gang_1
     to: "off"
+
+- action:
+  - data:
+      entity_id: input_select.home_status
+      option: Normal
+    service: input_select.select_option
+  alias: Homecoming
+  id: man0007
+  trigger:
+  - platform: state
+    entity_id: switch.bryter_gang_1
+    to: "on"
