@@ -17,7 +17,7 @@
   start_colortemp: 4400
   sunset_colortemp: 3000
   stop_colortemp: 1000
-#  brightness: 200
+  brightness: 200
   disable_brightness_adjust: False
   mode: mired
   transition: 10
